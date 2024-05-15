@@ -9,9 +9,18 @@ let areaCirculo = Math.PI * radio * radio;
     alert("Área del círculo: " + areaCirculo.toFixed(2));
     alert("Circunferencia del círculo: " + circunferencia.toFixed(2));
 
-    let rectangulo = 0;
-    let base = parseFloat(prompt("por favor ingresa la base y la altura del rectangulo"))
-    let baseAltura = 
+    let baseRectangulo = parseFloat(prompt("Por favor, ingresa la base del rectángulo: "));
+        let alturaRectangulo = parseFloat(prompt("Por favor, ingresa la altura del rectángulo: "));
+        let areaRectangulo = baseRectangulo * alturaRectangulo;
+        let perimetroRectangulo = 2 * (baseRectangulo + alturaRectangulo);
+        alert("El área del rectángulo es: " + areaRectangulo.toFixed(2) + "\nEl perímetro del rectángulo es: " + perimetroRectangulo.toFixed(2));
+    
+        let baseTriangulo = parseFloat(prompt("Por favor, ingresa la base del triángulo: "));
+        let alturaTriangulo = parseFloat(prompt("Por favor, ingresa la altura del triángulo: "));
+        let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+        alert("El área del triángulo es: " + areaTriangulo.toFixed(2));
+
+        alert("¡Gracias por utilizar la calculadora geométrica!");
 
     
     
